@@ -1,6 +1,17 @@
 require 'io/console'
 
-@all_users = {:admin => {:password => "password", :name => "admin", :email => "admin@admin.com", :birthday =>"01/01/0001"}}
+@all_users = {:admin => {
+                      :password => "password",
+                      :name => "admin",
+                      :email => "admin@admin.com",
+                      :birthday =>"01/01/0001"},
+                :teddy => {
+                      :password => "tennis",
+                      :name => "Teddy Foley",
+                      :email => "tfoley@gmail.com",
+                      :birthday => "04/16/2002"
+                }
+              }
 @authorize = false
 
 def new_account
